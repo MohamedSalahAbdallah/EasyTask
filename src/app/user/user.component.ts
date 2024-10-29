@@ -17,7 +17,7 @@ export class UserComponent {
     return `assets/users/${this.avatar}`;
   }
 
-  onSelectUSer() {
+  onSelectUser() {
     this.select.emit(this.id);
   }
 }
