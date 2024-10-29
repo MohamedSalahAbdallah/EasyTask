@@ -12,6 +12,7 @@ import { Itask } from '../itask';
 export class TasksComponent {
   @Input({ required: true }) name!: string;
   @Input({ required: true }) id!: string;
+
   tasks = [
     {
       id: 't1',
@@ -39,5 +40,8 @@ export class TasksComponent {
   ];
   public get selectedUserTasks(): Itask[] {
     return this.tasks.filter((task) => task.userId === this.id);
+  }
+  completeTask(taskId: string) {
+    this.tasks = this.tasks.filter((task) => task.id !== taskId);
   }
 }
