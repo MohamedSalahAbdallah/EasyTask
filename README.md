@@ -41,3 +41,8 @@ The `TasksService` provides the following methods:
 ## Data Persistence
 
 Tasks are stored in the browser's localStorage, allowing data to persist between sessions.
+
+## Contact
+Mohamed Bakr - m.salahbakr2000@gmail.com
+
+Project Link: https://superb-smakager-7ce2f9.netlify.app
