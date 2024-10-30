@@ -1,27 +1,43 @@
-# Essentials
+# Task Management Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+## Overview
 
-## Development server
+This project is an Angular-based task management application. It allows users to create, view, and manage tasks associated with different user IDs.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- View tasks filtered by user ID
+- Add new tasks
+- Remove existing tasks
+- Persistent storage using localStorage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Structure
 
-## Build
+The main component of this project is the `TasksService`, which handles the core functionality of task management.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js and npm installed
+- Angular CLI installed (`npm install -g @angular/cli`)
 
-## Running end-to-end tests
+### Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository
+2. Navigate to the project directory
+3. Run `npm install` to install dependencies
+4. Run `ng serve` to start the development server
+5. Open your browser and navigate to `http://localhost:4200`
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The `TasksService` provides the following methods:
+
+- `getTasksByUserId(userId: string)`: Retrieves tasks for a specific user
+- `addTask(task: INewTask)`: Adds a new task
+- `removeTask(id: string)`: Removes a task by its ID
+
+## Data Persistence
+
+Tasks are stored in the browser's localStorage, allowing data to persist between sessions.
